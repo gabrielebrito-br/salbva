@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Menu de Navegação -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">&lt;Dev/&gt;</a>
+      <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Início</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Principal (Hero) -->
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="badge">Desenvolvedor Front-End</span>
+          <h1 class="hero-title">Criando experiências digitais modernas</h1>
+          <p class="hero-description">Transformo ideias em código limpo, interfaces funcionais e aplicações responsivas.</p>
+          <div class="hero-buttons">
+            <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn-outline">Contato</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Minhas Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>HTML5 &amp; CSS3</h3>
+            <p>Estruturas semânticas, layouts responsivos, Flexbox, CSS Grid e variáveis.</p>
+          </div>
+          <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Manipulação de DOM, requisições assíncronas (APIs) e lógica web moderna.</p>
+          </div>
+          <div class="skill-card">
+            <h3>UI/UX Design</h3>
+            <p>Foco na usabilidade, componentes intuitivos e temas responsivos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="section-title">Meus Projetos</h2>
+        
+        <!-- Botões de Filtro -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="api">APIs</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <article class="project-card" data-category="web">
+            <div class="project-box">PROJETO 01</div>
+            <div class="project-info">
+              <h3>Site Responsivo</h3>
+              <p>Aplicação web com suporte a temas e layout responsivo para mobile.</p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="project-card" data-category="api">
+            <div class="project-box">PROJETO 02</div>
+            <div class="project-info">
+              <h3>Consumo de API</h3>
+              <p>Aplicação que busca e exibe dados dinâmicos em tempo real via Fetch API.</p>
+              <div class="tags">
+                <span>JavaScript</span><span>API</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-container">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" required placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" required placeholder="seu@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" rows="5" required placeholder="Sua mensagem..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Desenvolvedor Web. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
